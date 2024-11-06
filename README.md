@@ -20,4 +20,6 @@ Download den nyeste version af RStudio ned på din computer. Husk at vælg en ve
 ## Via en browser
 ### Gå til Posit Cloud
 Ønsker du at tilgå R og Rstudio fra en browser, skal du blot følge dette link: https://posit.cloud/plans/free. Her skal du enten oprette en gratis profil eller logge ind, hvis du allerede har en bruger.
+
+# 
 <br><img src="./StatistikIntro.png" width="400"/>
