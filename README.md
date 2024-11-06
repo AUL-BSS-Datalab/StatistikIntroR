@@ -8,7 +8,16 @@ I denne workshop bliver du introduceret til programmeringssproget R samt den gra
 # Data
 I mappen data findes det rådata vi bruger i workshoppen. Vores data stammer fra Erik Gahner Larsens bog 'Introduktion til R' (2022) og indeholder forskellige informationer omhandlende folketingsvalg i Danmark. Her ligger vores data i en excel fil fordelt på to ark/sheets. Det første af de to ark indeholder en tabel over antal stemmer fordelt på parti, og det næste ark indeholder en tabel over antal mandater fordelt på parti.
 
-# Tilgå R via en browser
-## Gå til Posit Cloud
+# Tilgå R og Rstudio
+## Lokalt
+### 1. Installer R
+Download den nyeste version af R ned på din computer. Husk at vælg en version, der passer til din computers styresystem. R er et ’sprog’ vi skal bruge til at programmere med.
+<br> R kan downloades her: https://posit.co/download/rstudio-desktop/
+### 2. Installer RStudio
+Download den nyeste version af RStudio ned på din computer. Husk at vælg en version, der passer til din computers styresystem. RStudio er selve applikationen, hvori vi skriver vores kode. Det er RStudio vi åbner, når vi skal programmere.
+<br> RStudio kan downloades her: https://posit.co/download/rstudio-desktop/
+
+## Via en browser
+### Gå til Posit Cloud
 Ønsker du at tilgå R og Rstudio fra en browser, skal du blot følge dette link: https://posit.cloud/plans/free. Her skal du enten oprette en gratis profil eller logge ind, hvis du allerede har en bruger.
-<img src="./StatistikIntro.png" width="400"/>
+<br><img src="./StatistikIntro.png" width="400"/>
