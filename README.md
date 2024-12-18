@@ -1,7 +1,7 @@
 # R Intro - Deskriptiv Statistik
-I denne workshop bliver du introduceret til programmeringssproget R samt den grafiske brugergrænseflade Rstudio, hvor vi skriver og kører vores kode. Workshoppen er målrettet nybegyndere, det vil sige at der ikke er forventninger til, at man har prøvet at programmere før. Hvis man har mulighed for det, må man meget gerne installere R og Rstudio på sin computer inden workshoppen eller oprette en profil på browserudgaven af Rstudio. Se vejledning nederst på denne side. 
+I denne workshop bliver du introduceret til programmeringssproget R samt den grafiske brugergrænseflade RStudio, hvor vi skriver og kører vores kode. Workshoppen er målrettet nybegyndere, det vil sige at der ikke er forventninger til, at man har prøvet at programmere før. Hvis man har mulighed for det, må man meget gerne installere R og Rstudio på sin computer inden workshoppen eller oprette en profil på browserudgaven af Rstudio. Se vejledning nederst på denne side. 
 <br> Workshoppen omhandler deskriptiv statistik og vi kommer blandt andet til at berøre:
-1. Hvordan man navigerer i Rstudio
+1. Hvordan man navigerer i RStudio
 2. Hvordan man indlæser en Excel fil i R
 3. Hvordan man anvender basale statistiske funktioner
 4. Hvordan man laver visualiseringer
@@ -9,7 +9,7 @@ I denne workshop bliver du introduceret til programmeringssproget R samt den gra
 # Data
 I mappen data findes det rådata vi bruger i workshoppen. Vores data stammer fra Erik Gahner Larsens bog 'Introduktion til R' (2022) og indeholder forskellige informationer omhandlende folketingsvalg i Danmark. Her ligger vores data i en excel fil fordelt på to ark/sheets. Det første af de to ark indeholder en tabel over antal stemmer fordelt på parti, og det næste ark indeholder en tabel over antal mandater fordelt på parti.
 
-# Tilgå R og Rstudio
+# Tilgå R og RStudio
 ## Lokalt
 ### 1. Installer R
 Download den nyeste version af R ned på din computer. Husk at vælg en version, der passer til din computers styresystem. R er et ’sprog’ vi skal bruge til at programmere med.
