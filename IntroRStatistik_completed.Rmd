@@ -25,11 +25,11 @@ forskellige former for funktioner og overblik. Første vindue (øverst til
 venstre) er den primære grænseflade. Det er her vi skriver vores kode.
 Andet vindue (nederst til venstre) indeholder blandt andet vores konsol.
 Det er her vores kode bliver eksekveret og kan altså ses som værende det
-bagvedlingende lag - selve 'computeren/lommeregneren'. Tredje vinue
-(øverst til høje) viser blandt andet det enviroment vi arbejder i, når
+bagvedliggende lag - selve 'computeren/lommeregneren'. Tredje vindue
+(øverst til høje) viser blandt andet det environment vi arbejder i, når
 vi har lavet et projekt. Et enviroment skal her forstås som en oversigt
-over de variable vi bruger i vores kode (objekter). Vi bruger blandt
-andet en variable når vi indlæser vores data og gemmer det under et
+over de objekter vi bruger i vores kode (data). Vi bruger blandt
+andet et objekt når vi indlæser vores data og gemmer det under et
 sigende navn. En variable indeholder altså værdier som bliver tildelt af
 os. Fjerde vindue (nederst til højre) viser blandt andet det mappe- og
 filsystem vi befinder os i. På den måde kan man let se, hvordan ens
@@ -48,7 +48,7 @@ gældende linje i den grå boks.
 # Forberedelse
 
 Det første vi gør, er at installere de pakker vi skal bruge. Disse
-pakker udvider basesfunktionaliteten, og gør det blandt andet muligt at
+pakker udvider basisfunktionaliteten, og gør det blandt andet muligt at
 lave mere avanceret statistik samt informationsrige visualiseringer.
 
 ```{r Installer pakker}
@@ -69,7 +69,7 @@ library(ggplot2)
 # Data
 
 Vi skal nu til at indlæse og gemme vores data omhandlende valgresultater
-i en variabel. Vi kalder vores variabel noget beskrivende og
+i et objekt. Vi kalder vores objekt noget beskrivende og
 genkendeligt, der beskriver indholdet.
 
 Vores data stammer som sagt fra Erik Gahner Larsens bog 'Introduktion
@@ -95,7 +95,7 @@ fv_seats <- read_excel("data/folketingsvalg.xlsx", sheet = "seats")
 
 ```
 
-Man kan nu se, at variablerne er i vores enviroment (vinduet øverst til
+Man kan nu se, at variablerne er i vores environment (vinduet øverst til
 højre). Ved at trykke på navnet, kan vi se vores data i en tabel. Vi kan
 også få overblik og indblik i vores data ved at bruge en række
 funktioner i R.
@@ -193,7 +193,7 @@ fv_udv %>%
 ```
 
 Til næste visualisering genbruger vi de fleste af funktionerne fra
-tidligere. Den eneste nye tilføjelse er funtionen factor(). Denne gør
+tidligere. Den eneste nye tilføjelse er funktionen factor(). Denne gør
 det muligt at inddele i 'kategorier'/'niveauer'. Hvilket vi er
 interesseret i, da det giver en mere forklarende visualisering af årstal
 i vores tilfælde.
@@ -220,16 +220,16 @@ bliver et samlet datasæt. Dette gør det muligt at lave nogle analyser og
 visualiseringer, der ikke er mulige, hvis ens data befinder sig i
 forskellige datasæt.
 
-Vi ønsker at sammelægge de to datasæt vi indlæste i starten af scriptet;
+Vi ønsker at sammenlægge de to datasæt vi indlæste i starten af scriptet;
 Henholdsvis fv_votes og fv_seats. Når man skal sammenlægge to datasæt,
-skal R have at vide, hvordan det skal sammelægge dem. Dvs. hvilket
+skal R have at vide, hvordan det skal sammenlægge dem. Dvs. hvilket
 datasæt, der skal føjes til et eksisterende, samt hvilken variabel R
 skal tage udgangspunkt i. For at få et meningsfuldt datasæt ud af
 sammenlægningen, er det vigtigt at gøre sig overvejelser om, hvordan de
 to datasæt ser ud. Har de nogle variabler der går igen, hvor det ville
 være meningsfuldt at sammenflette, og er de udformet på nogenlunde samme
 facon? Dette kan godt virke lidt forvirrende, men det kommer
-forhåbenligt til at give mening med eksemplet nedenfor.
+forhåbentligt til at give mening med eksemplet nedenfor.
 
 Hvis vi starter med at kigge på de to datasæt vi ønsker sammenlagt, kan
 vi se, at de ikke helt har samme form. fv_votes har 24 observationer,
@@ -253,13 +253,13 @@ skal sammenflette de to datasæt.
 #Sammenflet de to datasæt med udgangspunkt i den fælles variable 'years'
 fv <- left_join(fv_votes, fv_seats, by = "year")
 
-#Lav et nyt datasæt, hvor relevante variable optræder - obs. vi er interesserede i kolonnen votes_total, da andel udregnes med afsæt i det fulde antal
+#Lav et nyt datasæt, hvor relevante variable optræder. En tabel, som viser, hvor mange pct. af stemmerne Venstre har opnået ved de enkelte valg, og hvor mange pct. af mandaterne, det har resulteret i. - obs. vi er interesserede i kolonnen votes_total, da andel udregnes med afsæt i det fulde antal
 fv_venstre <- fv %>%
   select(year, votes_v, seats_v, votes_total) %>% 
   mutate(andel_stemmer_pct = votes_v / votes_total*100) %>% 
   mutate(andel_mandater_pct = seats_v / 175*100)
 
-#Ændre antal decimaler for procenttallene - her ændre vi til 1 decimal
+#Ændrer antal decimaler for procenttallene - her ændre vi til 1 decimal
 fv_venstre$andel_stemmer_pct <- round(fv_venstre$andel_stemmer_pct, 1)
 
 fv_venstre$andel_mandater_pct <- round(fv_venstre$andel_mandater_pct, 1)
