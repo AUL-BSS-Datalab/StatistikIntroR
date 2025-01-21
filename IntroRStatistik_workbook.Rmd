@@ -24,10 +24,10 @@ forskellige former for funktioner og overblik. Første vindue (øverst til
 venstre) er den primære grænseflade. Det er her vi skriver vores kode.
 Andet vindue (nederst til venstre) indeholder blandt andet vores konsol.
 Det er her vores kode bliver eksekveret og kan altså ses som værende det
-bagvedlingende lag - selve 'computeren/lommeregneren'. Tredje vinue
-(øverst til høje) viser blandt andet det enviroment vi arbejder i, når
-vi har lavet et projekt. Et enviroment skal her forstås som en oversigt
-over de variable vi bruger i vores kode (objekter). Vi bruger blandt
+bagvedliggende lag - selve 'computeren/lommeregneren'. Tredje vindue
+(øverst til høje) viser blandt andet det environment vi arbejder i, når
+vi har lavet et projekt. Et environment skal her forstås som en oversigt
+over de objekter vi bruger i vores kode (data). Vi bruger blandt
 andet en variable når vi indlæser vores data og gemmer det under et
 sigende navn. En variable indeholder altså værdier som bliver tildelt af
 os. Fjerde vindue (nederst til højre) viser blandt andet det mappe- og
@@ -47,7 +47,7 @@ gældende linje i den grå boks.
 # Forberedelse
 
 Det første vi gør, er at installere de pakker vi skal bruge. Disse
-pakker udvider basesfunktionaliteten, og gør det blandt andet muligt at
+pakker udvider basisfunktionaliteten, og gør det blandt andet muligt at
 lave mere avanceret statistik samt informationsrige visualiseringer.
 
 ```{r Installer pakker}
@@ -67,7 +67,7 @@ for at aktivere dem i netop denne session.
 # Data
 
 Vi skal nu til at indlæse og gemme vores data omhandlende valgresultater
-i en variabel. Vi kalder vores variabel noget beskrivende og
+i et objekt. Vi kalder vores objekt noget beskrivende og
 genkendeligt, der beskriver indholdet.
 
 Vores data stammer som sagt fra Erik Gahner Larsens bog 'Introduktion
@@ -148,7 +148,7 @@ Til dette bruger vi pakken ggplot.
 
 I nedenstående visualisering definerer vi følgende parametre:
 
--   Fitrerer at vi kun er interesserede i år 2019
+-   Filtrerer at vi kun er interesserede i år 2019
 
 -   Vi laver en visualisering i ggplot
 
@@ -173,7 +173,7 @@ I nedenstående visualisering definerer vi følgende parametre:
 ```
 
 Til næste visualisering genbruger vi de fleste af funktionerne fra
-tidligere. Den eneste nye tilføjelse er funtionen factor(). Denne gør
+tidligere. Den eneste nye tilføjelse er funktionen factor(). Denne gør
 det muligt at inddele i 'kategorier'/'niveauer'. Hvilket vi er
 interesseret i, da det giver en mere forklarende visualisering af årstal
 i vores tilfælde.
@@ -194,7 +194,7 @@ bliver et samlet datasæt. Dette gør det muligt at lave nogle analyser og
 visualiseringer, der ikke er mulige, hvis ens data befinder sig i
 forskellige datasæt.
 
-Vi ønsker at sammelægge de to datasæt vi indlæste i starten af scriptet;
+Vi ønsker at sammenlægge de to datasæt vi indlæste i starten af scriptet;
 Henholdsvis fv_votes og fv_seats. Når man skal sammenlægge to datasæt,
 skal R have at vide, hvordan det skal sammelægge dem. Dvs. hvilket
 datasæt, der skal føjes til et eksisterende, samt hvilken variabel R
@@ -203,7 +203,7 @@ sammenlægningen, er det vigtigt at gøre sig overvejelser om, hvordan de
 to datasæt ser ud. Har de nogle variabler der går igen, hvor det ville
 være meningsfuldt at sammenflette, og er de udformet på nogenlunde samme
 facon? Dette kan godt virke lidt forvirrende, men det kommer
-forhåbenligt til at give mening med eksemplet nedenfor.
+forhåbentligt til at give mening med eksemplet nedenfor.
 
 Hvis vi starter med at kigge på de to datasæt vi ønsker sammenlagt, kan
 vi se, at de ikke helt har samme form. fv_votes har 24 observationer,
@@ -226,11 +226,11 @@ skal sammenflette de to datasæt.
 ```{r Venstres stemme- og mandatandel i procent}
 #Sammenflet de to datasæt med udgangspunkt i den fælles variable 'years'
 
-#Lav et nyt datasæt, hvor relevante variable optræder - obs. vi er interesserede i kolonnen votes_total, da andel udregnes med afsæt i det fulde antal
+#Lav et nyt datasæt, hvor relevante variabler optræder. En tabel, som viser, hvor mange pct. af stemmerne Venstre har opnået ved de enkelte valg, og hvor mange pct. af mandaterne, det har resulteret i. - obs. vi er interesserede i kolonnen votes_total, da andel udregnes med afsæt i det fulde antal
 
 #Se en oversigt over fordelingen af andel stemmer og mandater i procent for Venstre
 
-#Ændre antal decimaler for procenttallene - her ændre vi til 1 decimal
+#Ændrer antal decimaler for procenttallene - her ændre vi til 1 decimal
 
 #Filtrer efter det år, hvor Venstre havde den mindste andel af stemmerne i procent
 
