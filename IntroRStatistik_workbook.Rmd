@@ -92,7 +92,7 @@ funktioner, og det er nemt at slå op, hvis man kommer i tvivl.
 
 ```
 
-Man kan nu se, at variablerne er i vores enviroment (vinduet øverst til
+Man kan nu se, at objekterne er i vores enviroment (vinduet øverst til
 højre). Ved at trykke på navnet, kan vi se vores data i en tabel. Vi kan
 også få overblik og indblik i vores data ved at bruge en række
 funktioner i R.
