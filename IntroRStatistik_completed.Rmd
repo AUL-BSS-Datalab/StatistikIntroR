@@ -30,7 +30,7 @@ bagvedliggende lag - selve 'computeren/lommeregneren'. Tredje vindue
 vi har lavet et projekt. Et enviroment skal her forstås som en oversigt
 over de objekter vi bruger i vores kode (data). Vi bruger blandt
 andet et objekt når vi indlæser vores data og gemmer det under et
-sigende navn. En variable indeholder altså værdier som bliver tildelt af
+sigende navn. Et objekt indeholder altså værdier som bliver tildelt af
 os. Fjerde vindue (nederst til højre) viser blandt andet det mappe- og
 filsystem vi befinder os i. På den måde kan man let se, hvordan ens
 filer er organiseret i ens projekt. Dette er relevant når vi skal
