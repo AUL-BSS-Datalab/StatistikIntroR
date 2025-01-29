@@ -28,8 +28,10 @@ Download den nyeste version af RStudio ned på din computer. Husk at vælg en ve
 # Videre arbejde i R
 Er du interesseret i at vide mere om R, så er disse bøger et oplagt sted at gå hen. Bøgerne kommer med en række øvelser, der kan klæde dig godt på i dit videre arbejde i R. 
 
-R for Data Science (2e) fra 2023 af Hadley Wickham, Mine Çetinkaya-Rundel og Garrett Grolemund: https://r4ds.hadley.nz/ 
-
 Introduktion til R fra 2022 af Erik Gahner Larsen
+
+An Introduction to R fra 2024 af Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau: https://intro2r.com/rsprojs.html 
+
+R for Data Science (2e) fra 2023 af Hadley Wickham, Mine Çetinkaya-Rundel og Garrett Grolemund: https://r4ds.hadley.nz/ 
 
 Text Mining with R: A Tidy Approach fra 2024 af Julia Silge og David Robinson: https://www.tidytextmining.com/ 
