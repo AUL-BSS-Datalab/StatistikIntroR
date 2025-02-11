@@ -8,6 +8,7 @@ I denne workshop bliver du introduceret til programmeringssproget R samt den gra
 
 # Data
 I mappen data findes det rådata vi bruger i workshoppen. Vores data stammer fra Erik Gahner Larsens bog 'Introduktion til R' (2022) og indeholder forskellige informationer omhandlende folketingsvalg i Danmark. Her ligger vores data i en excel fil fordelt på to ark/sheets. Det første af de to ark indeholder en tabel over antal stemmer fordelt på parti, og det næste ark indeholder en tabel over antal mandater fordelt på parti.
+Du kan se en oversigt over parti, navne og forskellige forkortelser ved følgende link: https://github.com/Straubinger/folketingsvalg 
 
 # Tilgå R og RStudio
 ## Lokalt
